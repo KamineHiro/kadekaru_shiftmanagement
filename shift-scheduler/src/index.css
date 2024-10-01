@@ -1,0 +1,102 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.shift-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #f9f9f9; /* テーブル全体の背景色 */
+}
+
+.shift-table th {
+  background-color: #4CAF50; /* ヘッダーに色を付ける */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.shift-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.shift-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* 偶数行に色を付けて交互に区別 */
+}
+
+.shift-table input {
+  width: 90%; /* 入力フィールドの幅 */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff; /* 入力フィールドの背景色 */
+  box-sizing: border-box;
+}
+
+.shift-table input:focus {
+  outline: none;
+  border: 2px solid #4CAF50; /* フォーカス時の枠色 */
+}
+
+.shift-table button {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.shift-table button:hover {
+  background-color: #45a049;
+}
+
+.shift-table button:last-child {
+  background-color: #f44336; /* クリアボタン用の赤色 */
+}
+
+.shift-table button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+.output {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.output p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+  .shift-table input {
+    width: 100%; /* モバイル表示時の幅調整を100%に */
+  }
+  .shift-table td, .shift-table th {
+    padding: 8px; /* モバイル表示時のパディングを減らす */
+  }
+  .shift-table button {
+    padding: 5px 8px; /* ボタンのサイズを小さくする */
+  }
+}
+
+
