@@ -55,6 +55,28 @@ function ShiftScheduler() {
     setShifts(updatedShifts);
   };
 
+  // 出力結果をコピーする処理
+  const handleCopyOutput = () => {
+    const outputText = shifts
+      .map((shift) => `${shift.date} ${shift.start ? `${shift.start} - ${shift.end}` : '×'}`)
+      .join('\n');
+    
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(outputText)
+        .then(() => alert('出力結果がコピーされました！'))
+        .catch((err) => alert('コピーに失敗しました: ' + err));
+    } else {
+      const textArea = document.createElement("textarea");
+      textArea.value = outputText;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      alert('出力結果をコピーしました。');
+    }
+  };
+  
+
   return (
     <div className="container">
       <h1>かでかるシフト提出</h1>
@@ -117,6 +139,7 @@ function ShiftScheduler() {
               </p>
             ))}
           </div>
+          <button onClick={handleCopyOutput}>出力結果をコピー</button>
         </>
       )}
     </div>
@@ -124,6 +147,7 @@ function ShiftScheduler() {
 }
 
 export default ShiftScheduler;
+
 
 
 
