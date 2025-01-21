@@ -1,7 +1,7 @@
-# シフトスケジューラー
+# シフト表作成アプリ
 
 ## 概要
-シフトスケジューラーは、シフト管理を効率化するためのWebアプリケーションです。React.jsを使用して構築されています。
+このアプリは、シフト管理を効率化するためのWebアプリケーションです。React.jsを使用して構築されています。
 
 ## デモ
 [https://kadekaru-shiftmanagement.vercel.app](https://kadekaru-shiftmanagement.vercel.app)
