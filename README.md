@@ -58,4 +58,69 @@ Reactを学ぶには、Reactのドキュメントを参照してください。
 
 npm run build が圧縮に失敗する場合
 このセクションはここに移動しました: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# kadekaru_shiftmanagement
+
+# シフトスケジューラー
+
+## 概要
+シフトスケジューラーは、シフト管理を効率化するためのWebアプリケーションです。React.jsを使用して構築されています。
+
+## インストール方法
+
+```bash
+# リポジトリのクローン
+git clone [リポジトリURL]
+
+# 依存関係のインストール
+cd shift-scheduler
+npm install
+
+# 開発サーバーの起動
+npm start
+```
+
+## 機能
+- シフトの作成・編集・削除
+- スケジュール管理
+- ユーザー管理
+
+## 技術スタック
+- React.js
+- TypeScript
+- PWA対応
+
+## PWA対応について
+このアプリケーションはPWA（Progressive Web App）として構築されており、以下の機能を提供します：
+
+- オフライン対応
+- ホーム画面へのインストール機能
+- アプリケーションアイコン
+  - favicon.ico (64x64, 32x32, 24x24, 16x16)
+  - icon192.png (192x192)
+  - icon512.png (512x512)
+
+## 開発方法
+1. `npm start` で開発サーバーを起動
+2. ブラウザで `http://localhost:3000` にアクセス
+3. コードの変更は自動的に反映されます
+
+## ビルド方法
+```bash
+npm run build
+```
+ビルドされたファイルは `build` ディレクトリに生成されます。
+
+## ライセンス
+MIT
+
+## 注意事項
+- JavaScriptを有効にする必要があります
+- モダンブラウザでの使用を推奨します
+
+## 貢献方法
+1. このリポジトリをフォーク
+2. 新しいブランチを作成
+3. 変更をコミット
+4. プルリクエストを作成
+
+## サポート
+問題や提案がある場合は、Issueを作成してください。
