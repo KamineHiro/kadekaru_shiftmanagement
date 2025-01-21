@@ -1,7 +1,10 @@
-# バイト先のシフト希望表作成アプリ
+# シフトスケジューラー
 
 ## 概要
 シフトスケジューラーは、シフト管理を効率化するためのWebアプリケーションです。React.jsを使用して構築されています。
+
+## デモ
+[https://kadekaru-shiftmanagement.vercel.app](https://kadekaru-shiftmanagement.vercel.app)
 
 ## 機能
 - シフトの作成・編集・削除
@@ -14,6 +17,7 @@
 - TypeScript
 - PWA対応
 - CSS Modules
+- Vercel (デプロイ)
 
 ## インストール方法
 
@@ -47,6 +51,10 @@ npm start
   - favicon.ico (64x64, 32x32, 24x24, 16x16)
   - icon192.png (192x192)
   - icon512.png (512x512)
+
+## デプロイ
+このアプリケーションは[Vercel](https://vercel.com)にデプロイされています。
+デプロイ先: [https://kadekaru-shiftmanagement.vercel.app](https://kadekaru-shiftmanagement.vercel.app)
 
 ## 開発方法
 1. `npm start` で開発サーバーを起動
